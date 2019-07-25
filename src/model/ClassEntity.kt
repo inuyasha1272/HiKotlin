@@ -1,14 +1,11 @@
 package model
 
-class ClassEntity() {
+data class ClassEntity(var message: String?, var status: Int, var data: Animal?) {
 
-    var message:String? = null
-    var status:Int = -1
-    var data:Animal? = null
+    constructor() : this(null, 0, null)
 
     override fun toString(): String {
         return "ClassEntity(message=$message, status=$status, data=$data)"
     }
-
 
 }
